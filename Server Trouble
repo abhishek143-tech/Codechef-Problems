@@ -1,0 +1,21 @@
+#include <bits/stdc++.h>
+typedef long long ll;
+using namespace std;
+int main(){
+     ios::sync_with_stdio(0);
+     cin.tie(0);
+     ll t;
+     cin>>t;
+     while (t--)
+     {
+         ll n,k;
+         cin>>n>>k;
+         if(n%k==0){
+             cout<<ceil(n/double(k))<<" "<<k<<endl;
+         }else{
+             cout<<ceil(n/double(k))<<" "<<n%k<<endl;
+         }
+     }
+     
+     return 0;
+}
